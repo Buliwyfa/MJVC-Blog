@@ -1,0 +1,622 @@
+2017-01-11 15:26:35 [127.0.0.1][1][71dko43ue3q2e5pbi0j4lk2661][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Incapaz de verificar los datos enviados.' in /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Controller.php:110
+Stack trace:
+#0 /var/www/html/MJVC-Blog/protected/humhub/components/Controller.php(68): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(152): humhub\components\Controller->beforeAction(Object(yii\base\InlineAction))
+#2 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('edit-field', Array)
+#3 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('admin/user-prof...', Array)
+#4 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#5 /var/www/html/MJVC-Blog/index.php(25): yii\base\Application->run()
+#6 {main}
+2017-01-11 15:26:35 [127.0.0.1][1][71dko43ue3q2e5pbi0j4lk2661][info][application] $_GET = [
+    'r' => 'admin/user-profile/edit-field'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1356'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/MJVC-Blog/index.php?r=admin%2Fuser-profile%2Fedit-field'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _ga=GA1.1.1744382188.1483799087; PHPSESSID=71dko43ue3q2e5pbi0j4lk2661; _csrf=6a9e27d8b13c402be42ec276e88414db8daff0779466f54c9d504c61b245c311a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22BdkMBpX_zfjYzIkUYTdZ9JuxsoR9HLCt%22%3B%7D; _identity=c51da66857e0ba1c067e2c02ac4d006a4fb454af9e79f4ec69517a124d03985ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%220843a224-1d8a-4f5a-bd67-8512cae96d92%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/MJVC-Blog/index.php'
+    'REMOTE_PORT' => '45773'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=admin%2Fuser-profile%2Fedit-field'
+    'REQUEST_URI' => '/MJVC-Blog/index.php?r=admin%2Fuser-profile%2Fedit-field'
+    'SCRIPT_NAME' => '/MJVC-Blog/index.php'
+    'PHP_SELF' => '/MJVC-Blog/index.php'
+    'REQUEST_TIME_FLOAT' => 1484169995.391
+    'REQUEST_TIME' => 1484169995
+]
+2017-01-11 15:43:08 [127.0.0.1][1][71dko43ue3q2e5pbi0j4lk2661][error][yii\web\HttpException:401] exception 'yii\web\HttpException' with message 'Your are already logged in! - Logout first!' in /var/www/html/MJVC-Blog/protected/humhub/modules/user/controllers/RegistrationController.php:45
+Stack trace:
+#0 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(152): humhub\modules\user\controllers\RegistrationController->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#2 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('user/registrati...', Array)
+#3 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#4 /var/www/html/MJVC-Blog/index.php(25): yii\base\Application->run()
+#5 {main}
+2017-01-11 15:43:08 [127.0.0.1][1][71dko43ue3q2e5pbi0j4lk2661][info][application] $_GET = [
+    'r' => 'user/registration'
+    'token' => '_uuROoPfQfUl'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_X_CLIENT_DATA' => 'CJC2yQEIorbJAQiLmcoBCPqcygEIqZ3KAQ=='
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _ga=GA1.1.1744382188.1483799087; PHPSESSID=71dko43ue3q2e5pbi0j4lk2661; _csrf=05c6109f143ed0ed465bcf70a7e74362033085c6b9ebace3323e0b9c1dd58232a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GsN7JEuXKNG_M9bDaVXB7Y5gr8uhwE3S%22%3B%7D; _identity=c51da66857e0ba1c067e2c02ac4d006a4fb454af9e79f4ec69517a124d03985ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%220843a224-1d8a-4f5a-bd67-8512cae96d92%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/MJVC-Blog/index.php'
+    'REMOTE_PORT' => '46002'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fregistration&token=_uuROoPfQfUl'
+    'REQUEST_URI' => '/MJVC-Blog/index.php?r=user%2Fregistration&token=_uuROoPfQfUl'
+    'SCRIPT_NAME' => '/MJVC-Blog/index.php'
+    'PHP_SELF' => '/MJVC-Blog/index.php'
+    'REQUEST_TIME_FLOAT' => 1484170988.806
+    'REQUEST_TIME' => 1484170988
+]
+2017-01-11 15:46:47 [127.0.0.1][1][vti08ep4l6gnk5e1nsml32rsl3][error][yii\web\HttpException:401] exception 'yii\web\HttpException' with message 'Your are already logged in! - Logout first!' in /var/www/html/MJVC-Blog/protected/humhub/modules/user/controllers/RegistrationController.php:45
+Stack trace:
+#0 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(152): humhub\modules\user\controllers\RegistrationController->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#2 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('user/registrati...', Array)
+#3 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#4 /var/www/html/MJVC-Blog/index.php(25): yii\base\Application->run()
+#5 {main}
+2017-01-11 15:46:47 [127.0.0.1][1][vti08ep4l6gnk5e1nsml32rsl3][info][application] $_GET = [
+    'r' => 'user/registration'
+    'token' => '_uuROoPfQfUl'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _ga=GA1.1.1744382188.1483799087; _csrf=05c6109f143ed0ed465bcf70a7e74362033085c6b9ebace3323e0b9c1dd58232a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GsN7JEuXKNG_M9bDaVXB7Y5gr8uhwE3S%22%3B%7D; PHPSESSID=vti08ep4l6gnk5e1nsml32rsl3; _identity=c51da66857e0ba1c067e2c02ac4d006a4fb454af9e79f4ec69517a124d03985ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%220843a224-1d8a-4f5a-bd67-8512cae96d92%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/MJVC-Blog/index.php'
+    'REMOTE_PORT' => '46137'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fregistration&token=_uuROoPfQfUl'
+    'REQUEST_URI' => '/MJVC-Blog/index.php?r=user%2Fregistration&token=_uuROoPfQfUl'
+    'SCRIPT_NAME' => '/MJVC-Blog/index.php'
+    'PHP_SELF' => '/MJVC-Blog/index.php'
+    'REQUEST_TIME_FLOAT' => 1484171207.401
+    'REQUEST_TIME' => 1484171207
+]
+2017-01-11 15:57:58 [127.0.0.1][-][3jev0lh3j0bi7siu8otn7qspu3][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'Login Requerido' in /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/User.php:435
+Stack trace:
+#0 /var/www/html/MJVC-Blog/protected/humhub/components/behaviors/AccessControl.php(74): yii\web\User->loginRequired()
+#1 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/ActionFilter.php(73): humhub\components\behaviors\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/MJVC-Blog/protected/humhub/components/Controller.php(68): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(152): humhub\components\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('get-update-json', Array)
+#9 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('notification/li...', Array)
+#10 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#11 /var/www/html/MJVC-Blog/index.php(25): yii\base\Application->run()
+#12 {main}
+2017-01-11 15:57:58 [127.0.0.1][-][3jev0lh3j0bi7siu8otn7qspu3][info][application] $_GET = [
+    'r' => 'notification/list/get-update-json'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'WkVFMGNrblodNgsHKS4bAhELAm8uUgweOxMdclQyWz0ofTBYFC5dCQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/MJVC-Blog/index.php?r=admin%2Fuser-profile%2Fedit-field&id=31'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _ga=GA1.1.1744382188.1483799087; _csrf=05c6109f143ed0ed465bcf70a7e74362033085c6b9ebace3323e0b9c1dd58232a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GsN7JEuXKNG_M9bDaVXB7Y5gr8uhwE3S%22%3B%7D; PHPSESSID=3jev0lh3j0bi7siu8otn7qspu3'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/MJVC-Blog/index.php'
+    'REMOTE_PORT' => '46350'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=notification%2Flist%2Fget-update-json'
+    'REQUEST_URI' => '/MJVC-Blog/index.php?r=notification%2Flist%2Fget-update-json'
+    'SCRIPT_NAME' => '/MJVC-Blog/index.php'
+    'PHP_SELF' => '/MJVC-Blog/index.php'
+    'REQUEST_TIME_FLOAT' => 1484171878.339
+    'REQUEST_TIME' => 1484171878
+]
+2017-01-11 16:00:46 [127.0.0.1][-][m2bcra6b66kcs4o6nnv4m3ohc4][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'Login Requerido' in /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/User.php:435
+Stack trace:
+#0 /var/www/html/MJVC-Blog/protected/humhub/components/behaviors/AccessControl.php(74): yii\web\User->loginRequired()
+#1 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/ActionFilter.php(73): humhub\components\behaviors\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/MJVC-Blog/protected/humhub/components/Controller.php(68): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(152): humhub\components\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('get-update-json', Array)
+#9 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('notification/li...', Array)
+#10 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#11 /var/www/html/MJVC-Blog/index.php(25): yii\base\Application->run()
+#12 {main}
+2017-01-11 16:00:46 [127.0.0.1][-][m2bcra6b66kcs4o6nnv4m3ohc4][info][application] $_GET = [
+    'r' => 'notification/list/get-update-json'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'Q2JsbU9pOW4EESJaBSxMNggsKzICUFsqIjQ0L3gwDAkxWhkFOCwKPQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/MJVC-Blog/index.php?r=user%2Faccount%2Fedit'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-tags-panel=expanded; pm_user-spaces-panel=expanded; _ga=GA1.1.1744382188.1483799087; _csrf=05c6109f143ed0ed465bcf70a7e74362033085c6b9ebace3323e0b9c1dd58232a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GsN7JEuXKNG_M9bDaVXB7Y5gr8uhwE3S%22%3B%7D; PHPSESSID=m2bcra6b66kcs4o6nnv4m3ohc4'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/MJVC-Blog/index.php'
+    'REMOTE_PORT' => '46396'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=notification%2Flist%2Fget-update-json'
+    'REQUEST_URI' => '/MJVC-Blog/index.php?r=notification%2Flist%2Fget-update-json'
+    'SCRIPT_NAME' => '/MJVC-Blog/index.php'
+    'PHP_SELF' => '/MJVC-Blog/index.php'
+    'REQUEST_TIME_FLOAT' => 1484172046.337
+    'REQUEST_TIME' => 1484172046
+]
+2017-01-11 16:03:36 [127.0.0.1][1][56fvi5fjmams8p28752vhdfl96][error][yii\web\HttpException:401] exception 'yii\web\HttpException' with message 'Your are already logged in! - Logout first!' in /var/www/html/MJVC-Blog/protected/humhub/modules/user/controllers/RegistrationController.php:45
+Stack trace:
+#0 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(152): humhub\modules\user\controllers\RegistrationController->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#2 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('user/registrati...', Array)
+#3 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#4 /var/www/html/MJVC-Blog/index.php(25): yii\base\Application->run()
+#5 {main}
+2017-01-11 16:03:36 [127.0.0.1][1][56fvi5fjmams8p28752vhdfl96][info][application] $_GET = [
+    'r' => 'user/registration'
+    'token' => '_uuROoPfQfUl'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-tags-panel=expanded; pm_user-spaces-panel=expanded; _ga=GA1.1.1744382188.1483799087; _csrf=05c6109f143ed0ed465bcf70a7e74362033085c6b9ebace3323e0b9c1dd58232a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GsN7JEuXKNG_M9bDaVXB7Y5gr8uhwE3S%22%3B%7D; PHPSESSID=56fvi5fjmams8p28752vhdfl96; _identity=c51da66857e0ba1c067e2c02ac4d006a4fb454af9e79f4ec69517a124d03985ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%220843a224-1d8a-4f5a-bd67-8512cae96d92%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/MJVC-Blog/index.php'
+    'REMOTE_PORT' => '46438'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fregistration&token=_uuROoPfQfUl'
+    'REQUEST_URI' => '/MJVC-Blog/index.php?r=user%2Fregistration&token=_uuROoPfQfUl'
+    'SCRIPT_NAME' => '/MJVC-Blog/index.php'
+    'PHP_SELF' => '/MJVC-Blog/index.php'
+    'REQUEST_TIME_FLOAT' => 1484172216.208
+    'REQUEST_TIME' => 1484172216
+]
+2017-01-11 16:03:46 [127.0.0.1][-][75hsi9sh778p6og0qpsuls5qi1][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'Login Requerido' in /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/User.php:435
+Stack trace:
+#0 /var/www/html/MJVC-Blog/protected/humhub/components/behaviors/AccessControl.php(74): yii\web\User->loginRequired()
+#1 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/ActionFilter.php(73): humhub\components\behaviors\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/MJVC-Blog/protected/humhub/components/Controller.php(68): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(152): humhub\components\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('get-update-json', Array)
+#9 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('notification/li...', Array)
+#10 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#11 /var/www/html/MJVC-Blog/index.php(25): yii\base\Application->run()
+#12 {main}
+2017-01-11 16:03:46 [127.0.0.1][-][75hsi9sh778p6og0qpsuls5qi1][info][application] $_GET = [
+    'r' => 'notification/list/get-update-json'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'Q2JsbU9pOW4EESJaBSxMNggsKzICUFsqIjQ0L3gwDAkxWhkFOCwKPQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/MJVC-Blog/index.php?r=user%2Faccount%2Fedit'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-tags-panel=expanded; pm_user-spaces-panel=expanded; _ga=GA1.1.1744382188.1483799087; _csrf=05c6109f143ed0ed465bcf70a7e74362033085c6b9ebace3323e0b9c1dd58232a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GsN7JEuXKNG_M9bDaVXB7Y5gr8uhwE3S%22%3B%7D; PHPSESSID=75hsi9sh778p6og0qpsuls5qi1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/MJVC-Blog/index.php'
+    'REMOTE_PORT' => '46438'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=notification%2Flist%2Fget-update-json'
+    'REQUEST_URI' => '/MJVC-Blog/index.php?r=notification%2Flist%2Fget-update-json'
+    'SCRIPT_NAME' => '/MJVC-Blog/index.php'
+    'PHP_SELF' => '/MJVC-Blog/index.php'
+    'REQUEST_TIME_FLOAT' => 1484172226.35
+    'REQUEST_TIME' => 1484172226
+]
+2017-01-11 16:03:52 [127.0.0.1][-][75hsi9sh778p6og0qpsuls5qi1][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'Login Requerido' in /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/User.php:435
+Stack trace:
+#0 /var/www/html/MJVC-Blog/protected/humhub/components/behaviors/AccessControl.php(74): yii\web\User->loginRequired()
+#1 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/ActionFilter.php(73): humhub\components\behaviors\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/MJVC-Blog/protected/humhub/components/Controller.php(68): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(152): humhub\components\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('get-update-json', Array)
+#9 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('notification/li...', Array)
+#10 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#11 /var/www/html/MJVC-Blog/index.php(25): yii\base\Application->run()
+#12 {main}
+2017-01-11 16:03:52 [127.0.0.1][-][75hsi9sh778p6og0qpsuls5qi1][info][application] $_GET = [
+    'r' => 'notification/list/get-update-json'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'THVIa1c0VTULBgZcHXEgbQc7DzQaDTdxLSMQKWBtYFI.TT0DIHFmZg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/MJVC-Blog/index.php?r=admin%2Fuser-profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-tags-panel=expanded; pm_user-spaces-panel=expanded; _ga=GA1.1.1744382188.1483799087; _csrf=05c6109f143ed0ed465bcf70a7e74362033085c6b9ebace3323e0b9c1dd58232a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GsN7JEuXKNG_M9bDaVXB7Y5gr8uhwE3S%22%3B%7D; PHPSESSID=75hsi9sh778p6og0qpsuls5qi1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/MJVC-Blog/index.php'
+    'REMOTE_PORT' => '46450'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=notification%2Flist%2Fget-update-json'
+    'REQUEST_URI' => '/MJVC-Blog/index.php?r=notification%2Flist%2Fget-update-json'
+    'SCRIPT_NAME' => '/MJVC-Blog/index.php'
+    'PHP_SELF' => '/MJVC-Blog/index.php'
+    'REQUEST_TIME_FLOAT' => 1484172232.337
+    'REQUEST_TIME' => 1484172232
+]
+2017-01-11 16:03:56 [127.0.0.1][-][75hsi9sh778p6og0qpsuls5qi1][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'Login Requerido' in /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/User.php:435
+Stack trace:
+#0 /var/www/html/MJVC-Blog/protected/humhub/components/behaviors/AccessControl.php(74): yii\web\User->loginRequired()
+#1 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/ActionFilter.php(73): humhub\components\behaviors\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/MJVC-Blog/protected/humhub/components/Controller.php(68): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(152): humhub\components\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('get-update-json', Array)
+#9 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('notification/li...', Array)
+#10 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#11 /var/www/html/MJVC-Blog/index.php(25): yii\base\Application->run()
+#12 {main}
+2017-01-11 16:03:56 [127.0.0.1][-][75hsi9sh778p6og0qpsuls5qi1][info][application] $_GET = [
+    'r' => 'notification/list/get-update-json'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'dkRoVTVrM0MxNyZify5GGz0KLwp4UlEHFxIwFwIyBiQEfB09Qi4AEA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/MJVC-Blog/index.php?r=admin%2Fuser-profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-tags-panel=expanded; pm_user-spaces-panel=expanded; _ga=GA1.1.1744382188.1483799087; _csrf=05c6109f143ed0ed465bcf70a7e74362033085c6b9ebace3323e0b9c1dd58232a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GsN7JEuXKNG_M9bDaVXB7Y5gr8uhwE3S%22%3B%7D; PHPSESSID=75hsi9sh778p6og0qpsuls5qi1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/MJVC-Blog/index.php'
+    'REMOTE_PORT' => '46450'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=notification%2Flist%2Fget-update-json'
+    'REQUEST_URI' => '/MJVC-Blog/index.php?r=notification%2Flist%2Fget-update-json'
+    'SCRIPT_NAME' => '/MJVC-Blog/index.php'
+    'PHP_SELF' => '/MJVC-Blog/index.php'
+    'REQUEST_TIME_FLOAT' => 1484172236.34
+    'REQUEST_TIME' => 1484172236
+]
+2017-01-11 16:04:06 [127.0.0.1][-][75hsi9sh778p6og0qpsuls5qi1][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'Login Requerido' in /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/User.php:435
+Stack trace:
+#0 /var/www/html/MJVC-Blog/protected/humhub/components/behaviors/AccessControl.php(74): yii\web\User->loginRequired()
+#1 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/ActionFilter.php(73): humhub\components\behaviors\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /var/www/html/MJVC-Blog/protected/humhub/components/Controller.php(68): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(152): humhub\components\Controller->beforeAction(Object(yii\base\InlineAction))
+#8 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('get-update-json', Array)
+#9 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('notification/li...', Array)
+#10 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#11 /var/www/html/MJVC-Blog/index.php(25): yii\base\Application->run()
+#12 {main}
+2017-01-11 16:04:06 [127.0.0.1][-][75hsi9sh778p6og0qpsuls5qi1][info][application] $_GET = [
+    'r' => 'notification/list/get-update-json'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'Q2JsbU9pOW4EESJaBSxMNggsKzICUFsqIjQ0L3gwDAkxWhkFOCwKPQ=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/MJVC-Blog/index.php?r=user%2Faccount%2Fedit'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-tags-panel=expanded; pm_user-spaces-panel=expanded; _ga=GA1.1.1744382188.1483799087; _csrf=05c6109f143ed0ed465bcf70a7e74362033085c6b9ebace3323e0b9c1dd58232a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GsN7JEuXKNG_M9bDaVXB7Y5gr8uhwE3S%22%3B%7D; PHPSESSID=75hsi9sh778p6og0qpsuls5qi1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/MJVC-Blog/index.php'
+    'REMOTE_PORT' => '46451'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=notification%2Flist%2Fget-update-json'
+    'REQUEST_URI' => '/MJVC-Blog/index.php?r=notification%2Flist%2Fget-update-json'
+    'SCRIPT_NAME' => '/MJVC-Blog/index.php'
+    'PHP_SELF' => '/MJVC-Blog/index.php'
+    'REQUEST_TIME_FLOAT' => 1484172246.335
+    'REQUEST_TIME' => 1484172246
+]
+2017-01-12 15:53:51 [127.0.0.1][1][an11170ir18b8im9skl1ckspl3][error][yii\web\HttpException:401] exception 'yii\web\HttpException' with message 'Your are already logged in! - Logout first!' in /var/www/html/MJVC-Blog/protected/humhub/modules/user/controllers/RegistrationController.php:45
+Stack trace:
+#0 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(152): humhub\modules\user\controllers\RegistrationController->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#2 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('user/registrati...', Array)
+#3 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#4 /var/www/html/MJVC-Blog/index.php(25): yii\base\Application->run()
+#5 {main}
+2017-01-12 15:53:51 [127.0.0.1][1][an11170ir18b8im9skl1ckspl3][info][application] $_GET = [
+    'r' => 'user/registration'
+    'token' => '_uuROoPfQfUl'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_X_CLIENT_DATA' => 'CJC2yQEIorbJAQiLmcoBCPqcygEIqZ3KAQ=='
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-tags-panel=expanded; pm_user-spaces-panel=expanded; _ga=GA1.1.1744382188.1483799087; _csrf=05c6109f143ed0ed465bcf70a7e74362033085c6b9ebace3323e0b9c1dd58232a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GsN7JEuXKNG_M9bDaVXB7Y5gr8uhwE3S%22%3B%7D; PHPSESSID=an11170ir18b8im9skl1ckspl3; _identity=c51da66857e0ba1c067e2c02ac4d006a4fb454af9e79f4ec69517a124d03985ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%220843a224-1d8a-4f5a-bd67-8512cae96d92%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/MJVC-Blog/index.php'
+    'REMOTE_PORT' => '48080'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fregistration&token=_uuROoPfQfUl'
+    'REQUEST_URI' => '/MJVC-Blog/index.php?r=user%2Fregistration&token=_uuROoPfQfUl'
+    'SCRIPT_NAME' => '/MJVC-Blog/index.php'
+    'PHP_SELF' => '/MJVC-Blog/index.php'
+    'REQUEST_TIME_FLOAT' => 1484258031.848
+    'REQUEST_TIME' => 1484258031
+]
+2017-01-12 21:20:43 [127.0.0.1][1][57uc7i35gvjgnum7fa4o1jkds3][error][yii\web\HttpException:401] exception 'yii\web\HttpException' with message 'Your are already logged in! - Logout first!' in /var/www/html/MJVC-Blog/protected/humhub/modules/user/controllers/RegistrationController.php:45
+Stack trace:
+#0 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Controller.php(152): humhub\modules\user\controllers\RegistrationController->beforeAction(Object(yii\base\InlineAction))
+#1 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#2 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('user/registrati...', Array)
+#3 /var/www/html/MJVC-Blog/protected/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#4 /var/www/html/MJVC-Blog/index.php(25): yii\base\Application->run()
+#5 {main}
+2017-01-12 21:20:43 [127.0.0.1][1][57uc7i35gvjgnum7fa4o1jkds3][info][application] $_GET = [
+    'r' => 'user/registration'
+    'token' => '_uuROoPfQfUl'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-tags-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _ga=GA1.1.1744382188.1483799087; _csrf=05c6109f143ed0ed465bcf70a7e74362033085c6b9ebace3323e0b9c1dd58232a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GsN7JEuXKNG_M9bDaVXB7Y5gr8uhwE3S%22%3B%7D; PHPSESSID=57uc7i35gvjgnum7fa4o1jkds3; _identity=c51da66857e0ba1c067e2c02ac4d006a4fb454af9e79f4ec69517a124d03985ea%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%220843a224-1d8a-4f5a-bd67-8512cae96d92%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/MJVC-Blog/index.php'
+    'REMOTE_PORT' => '48944'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fregistration&token=_uuROoPfQfUl'
+    'REQUEST_URI' => '/MJVC-Blog/index.php?r=user%2Fregistration&token=_uuROoPfQfUl'
+    'SCRIPT_NAME' => '/MJVC-Blog/index.php'
+    'PHP_SELF' => '/MJVC-Blog/index.php'
+    'REQUEST_TIME_FLOAT' => 1484277643.228
+    'REQUEST_TIME' => 1484277643
+]
