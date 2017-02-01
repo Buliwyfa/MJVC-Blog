@@ -20,6 +20,15 @@ AppAsset::register($this);
         <!-- start: Mobile Specific -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+        <!-- start: Social -->
+        <meta property="fb:app_id" content="1839059206350649"/>
+        <meta property="og:title" content="MJVC"/>
+        <meta property="og:url" content="https://mjvc.space"/>
+        <meta property="og:image" content="https://mjvc.space/uploads/logo_image/logo.png?cacheId=0"/>
+        <meta property="og:site_name" content="MJVC"/>
+        <meta property="og:email" content="stylder@gmail.com"/>
+        <meta property="og:description" content="Página por auxiliares para auxiliares"/>
+
         <!-- end: Mobile Specific -->
         <?= Html::csrfMetaTags() ?>
         <?php $this->head() ?>

@@ -28,6 +28,13 @@ $this->pageTitle = Yii::t('UserModule.views_auth_login', 'Login');
             <?php if(AuthChoice::hasClients()): ?>
                 <?= AuthChoice::widget([]) ?>
             <?php else: ?>
+                <h1>mjvc temas</h1>
+                <h2>mjvc manual</h2>
+                <h3>mjvc pagina oficial</h3>
+                <h4>mjvc lineamientos basicos</h4>
+                <h5>mjvc historia</h5>
+                <h1>mjvc cantos</h1>
+                <h2>mjvc nacional</h2>
                 <p><?php echo Yii::t('UserModule.views_auth_login', "If you're already a member, please login with your username/email and password."); ?></p>
             <?php endif; ?>
             
